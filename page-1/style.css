@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('fonts.css');
+@import url('simple-grid.css');
+:root {
+	--text-color: #2f3135;
+	--hr-color: #828992;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	font-family: LemonMilkRegular;
+	color: var(--text-color);
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbrand {
+	font-family: LemonMilkMedium;
+	letter-spacing: 3px;
+}
+hr {
+	border: 1px solid var(--hr-color);
+	border-radius: 2rem;
+}
+p,
+a,
+input {
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.85rem;
+}
+header {
+	margin: 0.5rem;
+	background-image: url('https://source.unsplash.com/m2J105CzEAU');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.navbar-top {
+	width: 100%;
+}
+.navbrand {
+	padding-top: 1rem;
+	padding-left: 2rem;
+	float: left;
+	font-size: 1.5rem;
+}
+.navlinks {
+	padding-top: 1rem;
+	padding-right: 2rem;
+	display: block;
+	float: right;
+}
+.navlinks * {
+	margin: 0 1rem;
+	text-decoration: none;
+}
+.btn-primary {
+	border: 2px solid var(--text-color);
+	padding: 0.5rem 2rem;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+.hero {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+.hero h1 {
+	font-size: 5rem;
+	margin-bottom: 0;
+}
+.text-center {
+	text-align: center;
+}
+.text-justify {
+	text-align: justify;
+}
+.spacer {
+	padding: 3rem;
+}
+.clear {
+	margin: 0;
+	padding: 0;
+}
+.cards-section {
+	background-color: #ebecee;
+	padding: 4rem 1rem;
+}
+.card-deck {
+	display: flex;
+	flex-direction: column;
+}
+.card-deck .card {
+	margin-bottom: 15px;
+}
+@media (min-width: 800px) {
+	.card-deck {
+		flex-flow: row wrap;
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	.card-deck .card {
+		display: flex;
+		flex: 1 0 0%;
+		flex-direction: column;
+		margin-right: 15px;
+		margin-bottom: 0;
+		margin-left: 15px;
+	}
+}
+.card {
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+	margin: 1rem;
+	background-color: white;
+	flex-basis: 100%;
+	border-radius: 0;
+}
+.card .card-img {
+	display: block;
+	width: 100%;
+}
+.card .card-body {
+	padding: 1rem 3rem;
+	flex: 1 1 auto;
+}
+.about-section {
+	background-color: white;
+}
+.about {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+.about :first-child,
+.about :last-child {
+	flex-basis: 100%;
+	overflow: hidden;
+}
+.subscribe-footer {
+	background-color: #ebecee;
+	padding: 5rem 10rem;
+}
+.subscribe-footer .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+input[type='text'] {
+	height: 2.25rem;
+	/* border: 1px solid rgba(0, 0, 0, 0.3); */
+	border: none;
+	border-radius: 6px;
+	padding: 1rem;
+	transition: all 200ms;
+	width: 100%;
+}
+input[type='text']:focus {
+	/* outline: none; */
+	outline: 1px solid rgba(0, 0, 0, 0.3);
+}
